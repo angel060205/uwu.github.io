@@ -37,7 +37,7 @@ footer {
 }
 
 .career-box {
-    flex: 1 1 300px;
+    flex: 1 1 50px;
     max-width: 300px;
     background-color: #f8f9fa;
     border: 1px solid #ddd;
