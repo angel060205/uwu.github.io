@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="icon" href="23.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institución Educativa</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<!-- NAVBAR CON MENÚ LATERAL IZQUIERDO -->
+<nav class="navbar navbar-dark bg-success">
+  <div class="container-fluid">
+    <button class="navbar-toggler me-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuLateral" aria-controls="menuLateral">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand ms-2" href="C:\Users\uriel\Desktop\TesoTuzos\index.html">TESOEM</a>
+
+
+  </div>
+</nav>
+
+<!-- OFFCANVAS: Menú lateral izquierdo -->
+<div class="offcanvas offcanvas-start bg-success text-white" tabindex="-1" id="menuLateral" aria-labelledby="menuLateralLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="menuLateralLabel">Menú</h5>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link text-white" href="profes.html">Profesores</a></li>
+      <li class="nav-item"><a class="nav-link text-white" href="conocenos.html">Conócenos</a></li>
+      <li class="nav-item"><a class="nav-link text-white" href="instituciones relacionadas.html">Instituciones Relacionadas</a></li>
+      <li class="nav-item"><a class="nav-link text-white" href="https://www.tesoem.mx/escolaris/index.html">Escolaris</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- HERO SECTION -->
+<div class="hero">
+    <img src="img/y.png" alt="Logo TESOEM">
+    <p class="lead">Formando profesionales con excelencia académica.</p>
+</div>
+
+<!-- SECCIÓN DE TARJETAS -->
+<div class="container my-5">
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card">
+                <a href="https://tesoem.edomex.gob.mx/sites/tesoem.edomex.gob.mx/files/files/calendario.pdf" target="_blank">
+                    <img src="img/cal.png" class="card-img-top" alt="Calendario Escolar">
+                </a>
+                <div class="card-body text-center">
+                    <h5 class="card-title">Calendario Escolar</h5>
+                    <p class="card-text">Consulta las fechas importantes del ciclo escolar.</p>
+                    <a href="https://tesoem.edomex.gob.mx/sites/tesoem.edomex.gob.mx/files/files/calendario.pdf" class="btn btn-success">Ver más</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <a href="oferta.html" target="_blank">
+                    <img src="img/oferta educativa.jpeg" class="card-img-top" alt="Oferta Educativa">
+                </a>
+                <div class="card-body text-center">
+                    <h5 class="card-title">Oferta Educativa</h5>
+                    <p class="card-text">Descubre nuestras carreras y programas académicos.</p>
+                    <a href="oferta.html" target="_blank" class="btn btn-success">Ver más</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <a href="servicios.html" target="_blank">
+                    <img src="img/ser1.png" class="card-img-top" alt="Servicios Escolares">
+                </a>
+                <div class="card-body text-center">
+                    <h5 class="card-title">Servicios Escolares</h5>
+                    <p class="card-text">Consulta los trámites disponibles para los estudiantes.</p>
+                    <a href="servicios.html" target="_blank" class="btn btn-success">Ver más</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- SECCIÓN EXTRA: CONTACTO Y MAPA -->
+<div class="extra-section text-center">
+    <div class="container">
+        <h3>Contáctanos</h3>
+        <p>Dirección: Paraje de Isidro S/N, Tecamachalco, 56400 San Isidro, Méx.</p>
+        <p>Teléfono: +52 5559863498 | Correo: informes@tesoem.edu.mx</p>
+        <div class="ratio ratio-16x9 mt-4">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.0580792538085!2d-98.9569335!3d19.3414188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f2a0c92a5b3b%3A0x8f13a8a7dbb18cf0!2sParaje%20de%20Isidro%20S%2FN%2C%20Tecamachalco%2C%2056400%20San%20Isidro%2C%20M%C3%A9x.!5e0!3m2!1ses-419!2smx!4v1713728973214!5m2!1ses-419!2smx" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+</div>
+
+<!-- SECCIÓN INFORMATIVA -->
+<div class="info-section text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="icon mb-2"><i class="bi bi-mortarboard-fill"></i></div>
+                <h5>Calidad Educativa</h5>
+                <p>Programas acreditados y profesores altamente capacitados.</p>
+            </div>
+            <div class="col-md-4">
+                <div class="icon mb-2"><i class="bi bi-globe"></i></div>
+                <h5>Vinculación Internacional</h5>
+                <p>Convenios con universidades extranjeras y oportunidades de movilidad.</p>
+            </div>
+            <div class="col-md-4">
+                <div class="icon mb-2"><i class="bi bi-person-lines-fill"></i></div>
+                <h5>Atención Personalizada</h5>
+                <p>Apoyo académico, psicológico y orientación vocacional para nuestros estudiantes.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- PIE DE PÁGINA -->
+<footer>
+    <p>&copy; 2025 Tecnológico de Estudios Superiores del Oriente del Estado de México</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+            body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #e0f7fa, #ffffff);
+            color: #333;
+        }  
+            .hero {
+            background: url('img/background.jpg') no-repeat center center/cover;
+            padding: 80px 20px;
+            color: white;
+            text-align: center;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+}
+
+
+        .hero img {
+            max-width: 80%;
+            margin-bottom: 20px;
+        }
+
+        .hero p.lead {
+            font-size: 1.5rem;
+        }
+
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-img-top {
+            height: 230px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            background-color: #ffffff;
+            padding: 25px;
+        }
+
+        .card-title {
+            font-weight: bold;
+            font-size: 1.25rem;
+            color: #2c3e50;
+        }
+
+        .card-text {
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        .btn-success {
+            background-color: #27ae60;
+            border: none;
+            border-radius: 25px;
+            padding: 10px 20px;
+        }
+
+        .btn-success:hover {
+            background-color: #1e8449;
+        }
+
+        footer {
+            background-color: #145A32;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .extra-section {
+            background-color: #dff0d8;
+            padding: 40px 0;
+        }
+
+        .extra-section h3 {
+            color: #2c3e50;
+            font-weight: bold;
+        }
+
+        .extra-section p {
+            color: #555;
+        }
+
+        .info-section {
+            padding: 60px 0;
+            background-color: #f9f9f9;
+        }
+
+        .info-section .icon {
+            font-size: 2.5rem;
+            color: #27ae60;
+        }
+        /* 3. Navbar */
+        .navbar {
+            background-color: #2ecc71;
+        }
+        .navbar .nav-link {
+            color: #fff;
+            transition: color 0.3s ease;
+        }
+        .navbar .nav-link:hover,
+        .navbar .nav-link.active {
+            text-decoration: underline;
+            color: #145214;
+        }
+        .hero p.lead {
+            font-size: 1.7rem;
+            background-color: rgba(0, 0, 0, 0.5); /* semitransparente */
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 15px;
+        }
+        .hero p.lead {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s ease-out forwards;
+            animation-delay: 0.3s;
+        }
+        
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }

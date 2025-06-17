@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oferta educativa</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Estilo para el contenedor de las carreras */
+        .menu-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        /* Estilo para cada recuadro de carrera */
+        .career-box {
+            
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            height: 400px;
+        }
+
+        /* Descripción que aparece cuando el cursor pasa sobre el recuadro */
+        .career-box .description {
+            position: absolute;
+            bottom: 20px;
+            left: 40px;
+            right: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s;
+        }
+
+        .career-box:hover .description {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .career-box button {
+            margin-top: 10px;
+        }
+
+        .career-box img {
+            height: 400px; /* Aumentar altura de la imagen */
+            
+            border-radius: 5px;
+        }
+
+        /* Cambiar el color de fondo del navbar a verde */
+        .navbar {
+            background-color: #28a745 !important; /* Verde */
+        }
+
+        .navbar .navbar-brand {
+            color: white;
+        }
+
+        .navbar-nav .nav-link {
+            color: white;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #f1f1f1;
+        }
+
+        /* Centrar el título */
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/tesoem.jpeg" alt="Logo" height="50"> 
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://tesoem.edomex.gob.mx/sites/tesoem.edomex.gob.mx/files/files/calendario.pdf">Calendario</a></li>
+                    <li class="nav-item"><a class="nav-link" href="oferta.html">Oferta Educativa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <div class="container my-5">
+
+
+        <!-- Contenedor de las carreras -->
+        <div class="menu-container">
+            <!-- Carrera: Contador Público -->
+            <div class="career-box">
+                <img src="img/5.jpg" alt="Contador Público">
+                <h3>Contador Público</h3>
+                <div class="description">
+                    <p>Descripción breve de la carrera de Contador Público.</p>
+                    <a href="pdf/conta.pdf" class="btn btn-success mt-auto" target="_blank">LEER MAS</a>
+                </div>
+            </div>
+
+            <!-- Carrera: Licenciatura en Gastronomía -->
+            <div class="career-box">
+                <img src="img/3.jpg" alt="Gastronomía">
+                <h3>Licenciatura en Gastronomía</h3>
+                <div class="description">
+                    <p>Descripción breve de la carrera de Gastronomía.</p>
+                    <a href="pdf/LICENCIATURA EN GASTRONOMIA.pdf" class="btn btn-success mt-auto" target="_blank">LEER MAS</a>
+                </div>
+            </div>
+
+            <!-- Carrera: Ingeniería Ambiental -->
+            <div class="career-box">
+                <img src="img/8.jpg" alt="Ingeniería Ambiental">
+                <h3>Ingeniería Ambiental</h3>
+                <div class="description">
+                    <p>Descripción breve de la carrera de Ingeniería Ambiental.</p>
+                    <a href="pdf/AMBIENTAL.pdf" class="btn btn-success mt-auto" target="_blank">LEER MAS</a>
+                </div>
+            </div>
+
+            <!-- Carrera: Ingeniería Industrial -->
+            <div class="career-box">
+                <img src="img/0.jpg" alt="Ingeniería Industrial">
+                <h3>Ingeniería Industrial</h3>
+                <div class="description">
+                    <p>Descripción breve de la carrera de Ingeniería Industrial.</p>
+                    <a href="pdf/INGENIERIA INDUSTRIAL.pdf" class="btn btn-success mt-auto" target="_blank">LEER MAS</a>
+                </div>
+            </div>
+
+            <!-- Carrera: Ingeniería en Administración -->
+            <div class="career-box">
+                <img src="img/9.jpg" alt="Ingeniería en Administración">
+                <h3>Ingeniería en Administración</h3>
+                <div class="description">
+                    <p>Descripción breve de la carrera de Ingeniería en Administración.</p>
+                    <a href="pdf/INGENIERIA EN ADMINISTRACION.pdf" class="btn btn-success mt-auto" target="_blank">LEER MAS</a>
+                </div>
+            </div>
+
+            <!-- Carrera: Ingeniería en Energías Renovables -->
+            <div class="career-box">
+                <img src="img/4.jpg" alt="Ingeniería en Energías Renovables">
+                <h3>Ingeniería en Energías Renovables</h3>
+                <div class="description">
+                    <p>Descripción breve de la carrera de Energías Renovables.</p>
+                    <a href="pdf/INGENIERIA EN ENERGIAS RENOVABLES.pdf" class="btn btn-success mt-auto" target="_blank">LEER MAS</a>
+                </div>
+            </div>
+
+            <!-- Carrera: Ingeniería en Sistemas Computacionales -->
+            <div class="career-box">
+                <img src="img/6.jpg" alt="Ingeniería en Sistemas Computacionales">
+                <h3>Ingeniería en Sistemas Computacionales</h3>
+                <div class="description">
+                    <p>Descripción breve de la carrera de Sistemas Computacionales.</p>
+                    <a href="pdf/isc.pdf" class="btn btn-success mt-auto" target="_blank">LEER MAS</a>
+                </div>
+            </div>
+
+            <!-- Carrera: Ingeniería en Tecnologías de la Información y Comunicaciones -->
+            <div class="career-box">
+                <img src="img/1.jpg" alt="Ingeniería en Tecnologías de la Información y Comunicaciones">
+                <h3>Ingeniería en Tecnologías de la Información y Comunicaciones</h3>
+                <div class="description">
+                    <p>Descripción breve de la carrera de Tecnologías de la Información y Comunicaciones.</p>
+                    <a href="pdf/TICS.pdf" class="btn btn-success mt-auto" target="_blank">LEER MAS</a>
+                </div>
+            </div>
+
+            <!-- Carrera: Ingeniería en Sistemas Automotrices -->
+            <div class="career-box">
+                <img src="img/7.jpg" alt="Ingeniería en Sistemas Automotrices">
+                <h3>Ingeniería en Sistemas Automotrices</h3>
+                <div class="description">
+                    <p>Descripción breve de la carrera de Sistemas Automotrices.</p>
+                    <a href="pdf/INGENIERIA EN SISTEMAS AUTOMOTRICES.pdf" class="btn btn-success mt-auto" target="_blank">LEER MAS</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p class="text-center">&copy; 2025 Tecnológico de Estudios Superiores del Oriente del Estado de México</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

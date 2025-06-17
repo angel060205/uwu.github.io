@@ -1,0 +1,30 @@
+body {
+    font-family: "Georgia", serif;
+    background-color: #f4f4f4;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #2ecc71 !important;
+}
+
+.navbar-brand img {
+    width: 50px;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+}
+
+.navbar-nav .nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Pie de página */
+footer {
+    background-color: #2ecc71;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+}
