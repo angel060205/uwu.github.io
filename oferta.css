@@ -50,7 +50,7 @@ footer {
 }
 
     .career-box img {
-        width: 100%;
+        width: 50px;
         height: auto;
         object-fit: cover;
         max-height: 200px;
